@@ -16,12 +16,15 @@ public class ProductoController {
     private List<Producto> productos = new ArrayList<>();
 
     // Constructor para inicializar algunos productos por defecto
-    public ProductoController() {
-        Producto p1 = new Producto(1, "Laptop");
-        Producto p2 = new Producto(2, "Smartphone");
-        Producto p3 = new Producto(3, "Tablet");
 
-        productos.addAll(Arrays.asList(p1, p2, p3));
+        public ProductoController() {
+            // Ahora creamos los productos con todos los parámetros requeridos
+            Producto p1 = new Producto(1, "Laptop", 1000, 10);
+            Producto p2 = new Producto(2, "Smartphone", 500, 15);
+            Producto p3 = new Producto(3, "Tablet", 300, 20);
+    
+            productos.addAll(Arrays.asList(p1, p2, p3));
+
     }
 
 
